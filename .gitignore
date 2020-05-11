@@ -1,0 +1,12 @@
+*.iml
+.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.dart_tool/
+.packages
+build/
+pubspec.lock
+doc/api

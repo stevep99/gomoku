@@ -1,0 +1,9 @@
+name: GoMoku
+description: A sample web application
+dev_dependencies:
+  build_runner: ^1.6.0
+  build_web_compilers: ^2.3.0
+  pedantic: ^1.8.0
+  build_test: ^0.10.2
+environment:
+  sdk: ">=2.1.0 <3.0.0"
