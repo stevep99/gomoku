@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gomoku (five-in-a-row) Game</title>
+    <link rel="stylesheet" href="gomoku.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164160035-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164160035-2');
+    </script>
+
+  </head>
+  <body>
+    <h1 id="top">Gomoku (five-in-a-row) Game</h1>
+    
+    <canvas id="gameCanvas" width="400" height="464" style="border: 1px solid black">
+    </canvas>
+
+    <script defer src="gomoku.dart.js"></script>
+
+    <p><b>Gomoku</b> (also known as 5-in-a-row) is a simple two-player strategy game, traditionally played on a <i>Go</i> board. Players take turns to place their counters on the grid.</p>
+    <p>The winner is the first player to join <i>exactly five</i> of their counters in row, horizontally, vertically, or diagonally. This version allows you play an AI opponent, with starting player assigned randomly. </p>
+    
+    <p>
+    The following rules are applied to mitigate Black's first-turn advantage:<br/>
+    - Black moves first, and must play the centre square.<br />
+    - White moves next and can play any sqaure.<br />
+    - Black moves next but may not play within the central 5x5 area of the board.<br />
+    - The game continues with players taking turns to play any remaining vacant position, until one player has exactly five counters in a row.
+    </p>
+    
+    <p>Note: The AI is not an expert player. The purpose of the app was mainly to try out web development using the Dart programming language.
+    </p>
+    
+    <p>
+    <a href="#top">Back to top</a> <img src="../gfx/arrow_up.gif" alt="" title="go to top"/>
+    </p>
+
+  </body>
+</html>
